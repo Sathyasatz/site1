@@ -8,8 +8,6 @@ app.use(cookieParser());
 
 //serves homeSite.html and sets first-party cookie
 app.get('/', function (req, res) {
-
-    req.cookies.title = 'third-party';
     res.cookie("first-party","785");
     res.sendFile(path.join(__dirname+"/home.html"));
 });
