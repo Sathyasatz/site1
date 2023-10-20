@@ -13,7 +13,7 @@
             document.getElementById("initProduct3").remove();
             var img = document.createElement("img");
             img.style="width:95%; height:35%";
-            img.src = "http://localhost:3001/getSearchProducts?location=results";
+            img.src = "http://ec2-34-228-195-211.compute-1.amazonaws.com:3001/getSearchProducts?location=results";
             document.getElementById("products1").appendChild(img);
             getProduct2();
         }
@@ -21,7 +21,7 @@
             
             var img = document.createElement("img");
             var value = document.getElementById("searchValue") ? document.getElementById("searchValue").value : null;
-            img.src = "http://localhost:8001/banner?location=" + value;
+            img.src = "https://44.218.248.48.nip.io/banner?location=" + value;
             // document.getElementById("products2").appendChild(img);
             // document.getElementById("products2").remove();
         }
@@ -205,7 +205,7 @@ img {
     <!-- <img style="  display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;" src="http://localhost:8001/banner?location=home">
+    width: 50%;" src="https://44.218.248.48.nip.io/banner?location=home">
     width: 50%;" src="http://ec2-54-197-27-232.compute-1.amazonaws.com:8001/banner?location=home"> -->
     
     <!-- <div>
@@ -227,13 +227,13 @@ img {
 
     <div style="margin-top: 10%;">
         <div id="initProduct1" style="width: 400px; height: 250px; margin: 2%; display: inline-block;">
-            <img src="http://localhost:3001/products?location=product1">
+            <img src="http://ec2-34-228-195-211.compute-1.amazonaws.com:3001/products?location=product1">
         </div>
         <div id="initProduct2" style="width: 400px; height: 250px; margin: 2%; display: inline-block;">
-            <img src="http://localhost:3001/products?location=product2">
+            <img src="http://ec2-34-228-195-211.compute-1.amazonaws.com:3001/products?location=product2">
         </div>
         <div id="initProduct3" style="width: 400px; height: 250px; margin: 2%; display: inline-block;">
-            <img src="http://localhost:3001/products?location=product3">
+            <img src="http://ec2-34-228-195-211.compute-1.amazonaws.com:3001/products?location=product3">
         </div>
     </div>
     <div style="margin-top: 10%;">
